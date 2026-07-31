@@ -9,7 +9,7 @@
       "name": "aivar",
       "source": "./plugins/aivar",
       "description": "AIVAR-saker fra Claude: søk saker, les saksgrunnlag, oppdater tema-kort og håndter vedlegg i saksmappa på Google Drive",
-      "version": "1.0.0"
+      "version": "1.1.0"
     }
   ]
 }

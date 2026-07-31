@@ -3,7 +3,7 @@
   "name": "aivar",
   "displayName": "AIVAR",
   "description": "Kobler Claude til AIVAR-saker: søk saker, les saksgrunnlag, oppdater tema-kort og håndter vedlegg i saksmappa på Google Drive",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Konsulent AS"
   },

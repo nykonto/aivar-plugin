@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "aivar",
+  "displayName": "AIVAR",
+  "description": "Kobler Claude til AIVAR-saker: søk saker, les saksgrunnlag, oppdater tema-kort og håndter vedlegg i saksmappa på Google Drive",
+  "version": "1.0.0",
+  "author": {
+    "name": "Konsulent AS"
+  },
+  "homepage": "https://github.com/nykonto/aivar-plugin",
+  "repository": "https://github.com/nykonto/aivar-plugin",
+  "keywords": ["byggesak", "aivar", "saksbehandling"],
+  "userConfig": {
+    "base_url": {
+      "type": "string",
+      "title": "AIVAR-URL",
+      "description": "Grunn-URL til plattformen uten skråstrek til slutt, f.eks. https://aivar.up.railway.app",
+      "required": true
+    },
+    "api_token": {
+      "type": "string",
+      "title": "API-token",
+      "description": "Samme verdi som AIVAR_API_TOKEN i Railway. Lagres i sikker lagring, ikke i innstillingsfilen",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

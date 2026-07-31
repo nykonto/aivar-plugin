@@ -11,12 +11,6 @@
   "repository": "https://github.com/nykonto/aivar-plugin",
   "keywords": ["byggesak", "aivar", "saksbehandling"],
   "userConfig": {
-    "base_url": {
-      "type": "string",
-      "title": "AIVAR-URL",
-      "description": "Grunn-URL til plattformen uten skråstrek til slutt, f.eks. https://aivar.up.railway.app",
-      "required": true
-    },
     "api_token": {
       "type": "string",
       "title": "API-token",

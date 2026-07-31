@@ -10,14 +10,13 @@ Claude — pluginen inneholder ingen.
 
 ## Hva du trenger
 
-| | |
-|---|---|
-| `base_url` | Grunn-URL til plattformen, uten skråstrek til slutt. Railway → tjenesten → Settings → Networking → Public Domain |
-| `api_token` | Samme verdi som `AIVAR_API_TOKEN` i Railway |
+Én verdi: `api_token`, samme som `AIVAR_API_TOKEN` i Railway. Claude spør om den
+ved installasjon. Den er `sensitive`, så verdien lagres i sikker lagring
+(Keychain / `~/.claude/.credentials.json`) — ikke i `settings.json` og ikke i git.
 
-Claude spør om begge ved installasjon. `api_token` er `sensitive`, så verdien
-lagres i sikker lagring (Keychain / `~/.claude/.credentials.json`) — ikke i
-`settings.json` og ikke i git.
+Server-URL-en står fast i `.mcp.json`. Den var tidligere `${user_config.base_url}`,
+men claude.ai løser ikke opp `${user_config.*}` — den sender malstrengen rå inn i
+connector-dialogen, som da avviser den med «URL must start with 'https'».
 
 ## Installasjon
 

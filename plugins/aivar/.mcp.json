@@ -2,7 +2,7 @@
   "mcpServers": {
     "aivar": {
       "type": "http",
-      "url": "${user_config.base_url}/api/mcp",
+      "url": "https://konsulent-platform-production.up.railway.app/api/mcp",
       "headers": {
         "Authorization": "Bearer ${user_config.api_token}"
       }

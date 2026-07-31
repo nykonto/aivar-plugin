@@ -1,0 +1,15 @@
+{
+  "name": "konsulent-as",
+  "description": "Plugins fra Konsulent AS for arbeid med norske byggesøknader",
+  "owner": {
+    "name": "Konsulent AS"
+  },
+  "plugins": [
+    {
+      "name": "aivar",
+      "source": "./plugins/aivar",
+      "description": "AIVAR-saker fra Claude: søk saker, les saksgrunnlag, oppdater tema-kort og håndter vedlegg i saksmappa på Google Drive",
+      "version": "1.0.0"
+    }
+  ]
+}

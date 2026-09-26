@@ -6,7 +6,8 @@ tema-kort og håndter vedlegg i saksmappa på Google Drive.
 Pluginen bærer bare tilkoblingen. Verktøyene ligger på serveren
 (`/api/mcp` i plattformen) og hentes ved tilkobling, så tool-flaten kan endres
 ved deploy uten at pluginen røres. Fagvurderingen gjøres av skillene i din egen
-Claude — pluginen inneholder ingen.
+Claude. Pluginen har bare én skill, `epostutkast`, som styrer hvor e-postutkast
+lages (se under).
 
 ## Hva du trenger
 
@@ -53,6 +54,14 @@ skille fra manuelle i saksbildet.
 
 Utenfor verktøyflaten med vilje: e-postsending, statusendring, «merk som betalt»
 og sletting. De gjøres i plattformen.
+
+## E-postutkast
+
+Lag e-postutkast med Gmail-connectoren koblet til soknadskontoret@gmail.com,
+ikke med `lag_epostutkast`. Det verktøyet skriver til en annen postkasse enn den
+teamet arbeider i, så utkastene blir ikke funnet. Bruk fortsatt `les_epost` for
+å finne sakens tråder, og ta med `[Sak: <saksnavn>]` i emnet så svaret knyttes
+til saken. Regelen ligger i skillen `skills/epostutkast`.
 
 ## Hvis tilkoblingen feiler
 

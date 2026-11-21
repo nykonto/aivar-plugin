@@ -42,6 +42,8 @@ URL og OAuth Client ID/Secret, og har ikke noe felt for bearer-token.
 |---|---|
 | `sok_saker` | Finn saker på adresse, kommune eller kundenavn |
 | `hent_sak` | Full sakskontekst — tiltak, eiendom, kunde, plangrunnlag, kartlag |
+| `hent_grunnlag` | Sakens grunnlag som JSON: for tegneverktøyet, og som `fakta.json` for skillene (`fakta_url`) |
+| `analyser_eiendom` | Samme analyse uten sak: kartlag, planer, planfunn, bestemmelser, bebyggelse og kart for en eiendom, som `fakta.json` |
 | `les_saksgrunnlag` | Sakens tema-kort med relevans, status, innhold og åpne avklaringer |
 | `oppdater_kort` | Skriv fakta inn i ett tema-kort |
 | `list_filer` | Filene i sakens Drive-mappe |

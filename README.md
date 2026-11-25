@@ -41,7 +41,7 @@ URL og OAuth Client ID/Secret, og har ikke noe felt for bearer-token.
 | Verktøy | Gjør |
 |---|---|
 | `sok_saker` | Finn saker på adresse, kommune eller kundenavn |
-| `hent_sak` | Full sakskontekst — tiltak, eiendom, kunde, plangrunnlag, kartlag |
+| `hent_sak` | Full sakskontekst — tiltak, eiendom, kunde, plangrunnlag, kartlag, og dokumentene i saken med status og lenke |
 | `hent_grunnlag` | Sakens grunnlag som JSON: for tegneverktøyet, og som `fakta.json` for skillene (`fakta_url`) |
 | `analyser_eiendom` | Samme analyse uten sak: kartlag, planer, planfunn, bestemmelser, bebyggelse og kart for en eiendom, som `fakta.json` |
 | `les_saksgrunnlag` | Sakens tema-kort med relevans, status, innhold og åpne avklaringer |
@@ -49,6 +49,8 @@ URL og OAuth Client ID/Secret, og har ikke noe felt for bearer-token.
 | `list_filer` | Filene i sakens Drive-mappe |
 | `hent_fil` | Innholdet i ett vedlegg (tekst som tekst, bilder som bilde, ellers Drive-lenke) |
 | `last_opp_fil` | Legg en fil i saksmappa |
+| `registrer_dokument` | Registrer et dokument laget i saken (Claude Docs, artefakt, Drive, Gmail, chat) med type, status og rev. Samme lenke oppdaterer raden. Bare lenke og metadata, aldri innhold |
+| `les_dokumenter` | Dokumentene i saken med notat, også de utgåtte |
 
 Kort oppdatert herfra får `oppdatert_av = 'mcp'`, så endringer utenfra er til å
 skille fra manuelle i saksbildet.
